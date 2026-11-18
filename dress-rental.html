@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JYPER Dress Rental Collection | Gensan</title>
+  <link rel="icon" href="assets/JYPER%20LOGO.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500;1,600&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--wine:#4A0404;--dark:#2D0202;--cream:#F9E6E6;--paper:#FAF3EB;--line:#E4C2C2;--ink:#2D0202;--muted:#5C2323}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;padding:16px;background:var(--cream);color:var(--ink);font-family:'Inter',sans-serif}
+    .topbar{height:74px;background:var(--cream);display:flex;align-items:center;justify-content:space-between;padding:10px clamp(18px,6vw,90px);gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;color:#FFFFFF;text-decoration:none;font-weight:800;letter-spacing:.08em}.brand img{width:48px;height:48px;object-fit:contain}.brand small{display:block;font-size:9px;letter-spacing:.12em;color:var(--muted);font-weight:500}
+    .nav{display:flex;align-items:center;gap:26px}.nav a{color:#FFFFFF;background:rgba(250,243,235,0.12);border:1px solid rgba(255,255,255,0.2);padding:8px 15px;border-radius:999px;text-decoration:none;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em}.nav .pill{background:#FAF3EB;color:#2D0202;padding:9px 18px;border-radius:999px;font-weight:700}
+    .hero{position:relative;border-radius:24px;margin-bottom:28px;min-height:clamp(500px,43vw,650px);background:linear-gradient(90deg,rgba(45,0,7,.82) 0%,rgba(65,0,12,.58) 43%,rgba(65,0,12,.08) 100%),url('assets/jyper-dress-mannequin.png') center center/cover no-repeat;display:flex;align-items:center;padding:52px clamp(24px,8vw,130px);color:#fff5e9;overflow:hidden}
+    .hero-copy{max-width:690px;position:relative;z-index:1}.eyebrow{font-size:11px;letter-spacing:.25em;font-weight:700}.hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(54px,7vw,92px);line-height:0.98;font-weight:600;color:#FFFFFF;margin:12px 0 20px;max-width:700px}.hero-copy>p:not(.eyebrow){font-size:16px;letter-spacing:.01em;text-transform:none;max-width:520px;line-height:1.6}.hero-cta{display:inline-flex;align-items:center;gap:12px;margin-top:18px;padding:15px 28px;border-radius:32px;background:#fff4e6;color:var(--dark);text-decoration:none;font-size:13px;font-weight:700;letter-spacing:.04em}.hero-cta:hover{transform:translateY(-2px);box-shadow:0 8px 22px #21000640}.hero-doodles{display:flex;align-items:center;gap:22px;margin-top:22px;color:#fff1dd;font-size:25px;text-shadow:0 0 12px #fff}.hero-sparkles{position:absolute;left:57%;top:14%;font-size:34px;letter-spacing:18px;color:#fff1dd;text-shadow:0 0 14px #fff;pointer-events:none}
+    .types{padding:36px 24px;text-align:center;background:#F9E6E6;border-radius:24px;margin-bottom:28px}.section-title{font-family:'Cormorant Garamond',Georgia,serif;color:var(--wine);font-size:clamp(42px,5.6vw,72px);font-style:italic;font-weight:500;line-height:1.05;letter-spacing:.005em;margin:0 0 22px}.type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1080px;margin:auto}.type-card{border:1px solid #b86c65;border-radius:17px;padding:18px 14px;background:#fff8f0;cursor:pointer;transition:.2s;color:var(--dark)}.type-card:hover,.type-card.active{background:#f1ddd2;box-shadow:0 5px 16px #4e10181c}.type-card .icon{font-size:30px;color:var(--wine)}.type-card h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:21px;margin:5px 0}.type-card p{font-size:13px;margin:0;color:var(--muted)}
+    .form-section{padding:36px 24px;border-radius:24px;margin-bottom:28px;background:var(--dark) url('assets/jyper-dress-collection-background.png') center/cover}.form-panel{max-width:1080px;margin:auto;background:var(--paper);border:5px double #d9b9a8;border-radius:18px;padding:30px clamp(18px,4vw,42px);box-shadow:0 12px 35px #21000644}.form-heading{text-align:center;color:var(--wine)}.form-heading h2{font-family:'Plus Jakarta Sans',sans-serif;font-size:clamp(28px,4vw,38px);margin:0}.form-heading p{font-size:13px;color:var(--muted);margin:7px 0 24px}.form-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:24px}.form-col h3{font-family:'Plus Jakarta Sans',sans-serif;color:var(--wine);background:#f0dcd2;padding:9px 13px;border-radius:8px;margin:0 0 14px;font-size:18px}.field{margin:0 0 14px}.field label{display:block;font-size:12px;font-weight:700;color:var(--dark);margin:0 0 6px}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:12px 13px;background:#fffdf9;color:var(--ink);font:13px 'Inter',sans-serif;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--wine);box-shadow:0 0 0 3px #761b2412}.field textarea{min-height:85px;resize:vertical}.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.submit-row{text-align:center;margin-top:8px}.submit{border:0;border-radius:30px;background:var(--wine);color:white;font-weight:700;padding:15px 32px;font-size:14px;cursor:pointer}.submit:hover{background:var(--dark)}.notice{font-size:12px;color:var(--muted);text-align:center;margin:12px auto 0;max-width:700px}.screenshot-instruction{max-width:760px;margin:18px auto 0;padding:17px 20px;background:#f3dfd5;border:2px solid #c98f7d;border-left:6px solid var(--wine);border-radius:12px;color:var(--dark);font-size:14px;line-height:1.65;text-align:center;font-weight:600}.screenshot-instruction strong{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;color:var(--wine);margin-bottom:5px}.social-actions{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin-top:12px}.social-actions a{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:12px 24px;border-radius:999px;background:var(--wine);color:#fffaf4;text-decoration:none;font-size:14px;font-weight:700;line-height:1;white-space:nowrap}.social-actions a:hover{background:var(--dark)}.social-icon{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;width:14px;height:14px;color:currentColor}.facebook-icon{font-family:Arial,sans-serif;font-size:14px;font-weight:800;line-height:1}.instagram-icon{width:12px;height:12px}.info{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:24px;background:#F9E6E6;border-radius:24px;margin-bottom:24px}.info article{display:flex;gap:12px;align-items:flex-start;border-right:1px solid var(--line);padding:5px 18px}.info article:last-child{border:0}.info b{display:block;color:var(--wine);font-family:'Plus Jakarta Sans',sans-serif}.info p{font-size:12px;line-height:1.5;margin:4px 0;color:var(--muted)}footer{text-align:center;padding:18px;background:var(--paper);color:var(--muted);font-size:12px}
+    .location-section{position:relative;padding:36px 24px;border-radius:24px;margin-bottom:28px;background-color:#eee0c9;background-image:repeating-linear-gradient(0deg,rgba(115,79,56,.025) 0,rgba(115,79,56,.025) 1px,transparent 1px,transparent 4px),repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0,rgba(255,255,255,.18) 1px,transparent 1px,transparent 5px),linear-gradient(135deg,#f4ead9,#e9d8bd);color:#761b24;overflow:hidden}
+    .location-wrap{max-width:1180px;margin:auto}
+    .location-heading{display:grid;grid-template-columns:minmax(180px, .72fr) 1.5fr;align-items:center;gap:30px;margin:0 auto 24px;max-width:1080px}
+    .location-script{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(48px,6vw,78px);line-height:.82;font-weight:400;color:#761b24;margin:0;text-shadow:0 1px 0 rgba(255,255,255,.45)}
+    .location-copy{position:relative;padding:0 0 0 28px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+    .location-copy:before{content:'↶';position:absolute;left:-18px;top:20px;font-family:Georgia,serif;font-size:54px;line-height:1;color:#76504a;transform:rotate(-28deg)}
+    .location-label{display:inline-block;margin:0;padding:3px 8px;background:rgba(255,250,244,.68);color:#761b24;font-size:clamp(12px,1.3vw,17px);letter-spacing:.035em;font-weight:700;line-height:1.45}
+    .location-google-link{display:inline-block;max-width:100%;overflow-wrap:anywhere;padding:2px 8px;background:rgba(255,250,244,.72);color:#761b24;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;font-size:clamp(13px,1.45vw,19px);font-weight:700;letter-spacing:.025em}
+    .location-google-link:hover{color:#4e1018}
+    .location-map-link{display:flex;justify-content:center;align-items:center;min-height:300px;border:1px solid #d7b99f;background:#fffaf4;padding:10px;border-radius:5px;box-shadow:0 8px 24px rgba(78,16,24,.12)}
+    .location-map-link img{display:block;width:auto;max-width:100%;height:auto;max-height:430px;object-fit:contain}
+    .location-caption{text-align:center;font-size:12px;color:#76504a;margin:12px 0 0}
+    .location-directions-button{display:table;width:max-content;max-width:100%;margin:18px auto 0;padding:13px 24px;border-radius:999px;background:#761b24;color:#fffaf4;text-decoration:none;font-size:11px;font-weight:800;letter-spacing:.045em;text-align:center;box-shadow:0 4px 14px rgba(78,16,24,.16);transition:transform .2s,background .2s}
+    .location-directions-button:hover{background:#4e1018;transform:translateY(-2px)}
+    @media(max-width:640px){.location-section{padding:30px 16px 38px}.location-heading{grid-template-columns:1fr;gap:12px;margin-bottom:18px}.location-script{font-size:58px}.location-copy{padding-left:24px}.location-copy:before{left:-4px;top:4px;font-size:42px}.location-map-link{min-height:180px;padding:6px}.location-map-link img{max-height:300px}.location-directions-button{font-size:10px;padding:12px 16px}}
+
+
+    .dress-process-section{padding:42px clamp(18px,4vw,48px);border-radius:24px;margin:0 0 28px;background:#F9E6E6;color:var(--ink)}
+    .dress-process-wrap{max-width:1120px;margin:auto}
+    .dress-process-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:24px}
+    .dress-process-heading .eyebrow{color:var(--wine);margin:0 0 8px}
+    .dress-process-heading h2{font:800 clamp(28px,4vw,42px) 'Plus Jakarta Sans',sans-serif;color:var(--wine);margin:0;letter-spacing:-.04em}
+    .dress-process-heading>p{max-width:420px;font-size:14px;line-height:1.65;color:var(--muted);margin:0}
+    .dress-pickup-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .dress-pickup-card{display:flex;gap:14px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:16px;background:#fffaf4}
+    .dress-pickup-icon{font-size:24px;line-height:1.2;flex:0 0 30px;text-align:center}
+    .dress-fitting-map-link{display:block;margin:14px 0 0 44px;border-radius:12px;overflow:hidden;border:1px solid var(--line);line-height:0;background:#fffaf4}
+    .dress-fitting-map-link img{display:block;width:100%;max-height:220px;object-fit:contain;background:#eee0c9;transition:transform .25s ease}
+    .dress-fitting-map-link:hover img{transform:scale(1.015)}
+    .dress-fitting-map-caption{display:inline-flex;margin:9px 0 0 44px;color:var(--wine);font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+    .dress-pickup-card h3{font:700 16px 'Plus Jakarta Sans',sans-serif;color:var(--wine);margin:0 0 6px}
+    .dress-pickup-card p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}
+    .dress-shop-card{display:block}
+    .dress-shop-card .dress-shop-content{display:flex;gap:14px;align-items:flex-start}
+    .dress-shop-photo-link{display:block;margin:14px 0 0 44px;border-radius:12px;overflow:hidden;border:1px solid var(--line);line-height:0}
+    .dress-shop-photo-link img{display:block;width:100%;max-height:170px;object-fit:cover;object-position:center 55%;transition:transform .25s ease}
+    .dress-shop-photo-link:hover img{transform:scale(1.02)}
+    .dress-shop-map-link{display:inline-flex;margin:10px 0 0 44px;color:var(--wine);font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+    .dress-shop-map-link:hover{color:var(--dark)}
+    .dress-fit-note{margin:16px 0 28px;padding:16px 20px;border:1px solid #d9a7a7;border-left:5px solid var(--wine);border-radius:12px;background:#f3dede;color:var(--dark);font-size:13px;line-height:1.7}
+    .dress-fit-note strong{color:var(--wine)}
+    .dress-schedule-panel{background:#fffaf4;border:1px solid var(--line);border-radius:18px;padding:22px}
+    .dress-schedule-panel h3{font:700 21px 'Plus Jakarta Sans',sans-serif;color:var(--wine);margin:0 0 6px}
+    .dress-schedule-panel>p{font-size:13px;color:var(--muted);margin:0 0 16px;line-height:1.6}
+    .dress-schedule-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid var(--line);border-radius:12px;font-size:13px}
+    .dress-schedule-table th,.dress-schedule-table td{padding:13px 16px;text-align:left;border-bottom:1px solid var(--line)}
+    .dress-schedule-table th{background:var(--wine);color:#fffaf4;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    .dress-schedule-table tr:last-child td{border-bottom:0}
+    .dress-schedule-table td:first-child{font-weight:800;color:var(--wine);white-space:nowrap}
+    @media(max-width:760px){.dress-process-heading{display:block}.dress-process-heading>p{margin-top:10px}.dress-pickup-grid{grid-template-columns:1fr}.dress-process-section{padding:30px 16px}.dress-schedule-panel{padding:16px}.dress-schedule-table th,.dress-schedule-table td{padding:11px 10px;font-size:12px}}
+
+    .catalogue-section{padding:48px 28px;border-radius:24px;margin-bottom:28px;background:var(--dark) url('assets/jyper-dress-collection-background.png') center/cover fixed;color:var(--paper)}
+    .catalogue-wrap{max-width:1280px;margin:auto}
+    .catalogue-heading{text-align:center;margin:0 auto 34px;max-width:760px}
+    .catalogue-heading .eyebrow{color:#f1d7c8}
+    .catalogue-heading h2{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(54px,7vw,92px);font-weight:400;line-height:.9;margin:8px 0 12px;color:var(--paper)}
+    .catalogue-heading p{font-size:14px;line-height:1.7;color:#f7e9df;margin:0}
+    .catalogue-filters{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:26px 0 34px}
+    .catalogue-filter{border:1px solid #e9cfc0;background:#fffaf4;color:var(--wine);border-radius:999px;padding:10px 18px;font:700 11px 'Inter',sans-serif;letter-spacing:.06em;cursor:pointer}
+    .catalogue-filter.active,.catalogue-filter:hover{background:var(--wine);color:#fffaf4;border-color:#fffaf4}
+    .dress-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+    .dress-card{overflow:hidden;border:1px solid #e4cfc0;border-radius:18px;background:var(--paper);color:var(--ink);box-shadow:0 14px 30px #16000645;display:flex;flex-direction:column;min-width:0}
+    .dress-photo{height:310px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:linear-gradient(145deg,#ead8ca,#fff8f0);color:#805b55;font:500 18px 'Plus Jakarta Sans',sans-serif}
+    .dress-photo span{max-width:190px}
+    .dress-info{padding:18px 18px 20px;text-align:center;display:flex;flex-direction:column;flex:1}
+    .dress-info h3{font:600 19px 'Plus Jakarta Sans',sans-serif;color:var(--dark);margin:0 0 9px}
+    .dress-meta{font-size:12px;color:var(--muted);line-height:1.7;margin:0 0 10px}
+    .dress-rate{font-size:13px;font-weight:700;color:var(--wine);margin:0 0 15px}
+    .dress-status{display:inline-block;align-self:center;border-radius:999px;background:#f1ddd2;color:var(--dark);padding:6px 11px;font-size:10px;font-weight:700;letter-spacing:.04em;margin-bottom:14px}
+    .dress-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:auto}
+    .dress-actions a{display:inline-flex;justify-content:center;align-items:center;padding:10px 14px;border-radius:999px;background:var(--wine);color:white;text-decoration:none;font-size:11px;font-weight:700}
+    .dress-actions a.secondary{background:#f1ddd2;color:var(--dark);border:1px solid #d8b9a7}
+    .editorial-title{font:400 clamp(36px,5vw,64px) 'Plus Jakarta Sans',sans-serif;letter-spacing:.02em;color:#fffaf4;text-align:center;margin:64px 0 22px}
+    .editorial-gallery{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+    .editorial-item{text-align:center;min-width:0}
+    .editorial-frame{height:330px;border:2px solid #f2dfd0;border-radius:28px 28px 18px 18px;padding:9px;background:#26040a;box-shadow:0 10px 25px #17000655}
+    .editorial-placeholder{height:100%;border-radius:19px;background:linear-gradient(180deg,#f8eee4,#e8d3c4);display:flex;align-items:center;justify-content:center;padding:12px;color:#805b55;font:16px 'Plus Jakarta Sans',sans-serif}
+    .editorial-label{display:inline-block;margin-top:10px;padding:7px 14px;background:#fffaf4;color:var(--wine);font:italic 16px 'Plus Jakarta Sans',sans-serif}
+    .catalogue-note{max-width:780px;margin:32px auto 0;padding:15px 20px;border:1px dashed #f1d9ca;border-radius:12px;color:#fff5eb;text-align:center;font-size:12px;line-height:1.6}
+    @media(max-width:1000px){.dress-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.editorial-gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:600px){.hero{background-position:64% center;min-height:520px}.hero-copy{max-width:100%;padding:10px 4px}.hero-copy>p:not(.eyebrow){max-width:270px}.catalogue-section{padding:46px 16px 52px;background-attachment:scroll}.dress-grid{grid-template-columns:1fr 1fr;gap:12px}.dress-photo{height:210px;font-size:15px}.dress-info{padding:14px 10px 15px}.dress-info h3{font-size:16px}.dress-actions a{font-size:10px;padding:9px 10px}.editorial-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.editorial-frame{height:270px}.catalogue-note{font-size:11px}}
+
+    @media(max-width:760px){.topbar{height:auto;align-items:flex-start;flex-direction:column}.nav{gap:14px;flex-wrap:wrap}.nav a{font-size:12px}.hero{min-height:430px;background-position:62% center;padding-top:42px;padding-bottom:42px}.hero h1{font-size:clamp(70px,16vw,104px);max-width:360px}.hero-copy>p:not(.eyebrow){max-width:300px}.hero-sparkles{left:auto;right:8%;top:8%;font-size:24px}.type-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.three{grid-template-columns:1fr}.info{grid-template-columns:1fr}.info article{border-right:0;border-bottom:1px solid var(--line)}}
+    @media(max-width:760px){.location-heading{grid-template-columns:1fr;gap:12px}.location-copy{padding-left:28px}.location-copy:before{left:0;top:0;font-size:36px}.location-section{padding:36px 16px}}
+
+    /* Keep the dress-rental navigation visible while scrolling */
+    .topbar{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(74,4,4,.97)!important;
+      border-bottom:1px solid rgba(255,255,255,.18);
+      box-shadow:0 8px 22px rgba(45,2,2,.12);
+      backdrop-filter:blur(10px);
+      -webkit-backdrop-filter:blur(10px);
+    }
+    html{scroll-padding-top:90px}
+    @media(max-width:700px){
+      .topbar{height:auto;min-height:74px;flex-wrap:wrap;padding:10px 16px!important}
+      .nav{gap:8px;flex-wrap:wrap}
+      .nav a{padding:7px 10px;font-size:10px}
+      html{scroll-padding-top:120px}
+    }
+  </style>
+</head>
+<body>
+<div style="max-width:1240px;margin:0 auto;background:#4A0404;border-radius:32px;padding:18px 28px 36px;box-shadow:0 28px 70px rgba(45,2,2,0.22);"><header class="topbar" style="background:transparent;border-bottom:1px solid rgba(255,255,255,0.18);padding:10px 0 20px;margin-bottom:20px;"><a class="brand" href="index.html"><img src="assets/JYPER%20LOGO.webp" alt="JYPER"><span>JYPER<small>DIGICAM &amp; DRESS RENTAL GENSAN</small></span></a><nav class="nav"><a href="index.html">Home</a><a href="index.html#cameras">Digicam Rental</a><a href="dress-rental.html">Dress Rental</a><a class="pill" href="#appointment-form">Book a Fitting</a></nav></header>
+<main>
+<section class="hero" aria-labelledby="dressHeroTitle"><div class="hero-copy"><p class="eyebrow">— JYPER DIGICAM &amp; DRESS RENTAL GENSAN —</p><h1 id="dressHeroTitle">Our Dress<br>Rental Collection</h1><p>Find the perfect dress for your special occasions, celebrations, and unforgettable moments.</p><a class="hero-cta" href="#dress-catalogue">EXPLORE OUR DRESS COLLECTION <span>→</span></a><div class="hero-doodles" aria-hidden="true"><span>⌣</span><span>✧</span><span>⌣</span></div></div><div class="hero-sparkles" aria-hidden="true">✧ ✦</div></section>
+<section class="catalogue-section" id="dress-catalogue" aria-labelledby="catalogueTitle"><div class="catalogue-wrap">
+  <div class="catalogue-heading"><p class="eyebrow">THE JYPER BOUTIQUE EDIT</p><h2 id="catalogueTitle">Explore the Collection</h2><p>Browse our dress categories and book a fitting appointment to view pieces in person.</p></div>
+  <div class="catalogue-filters" role="group" aria-label="Filter dress categories"><button class="catalogue-filter active" type="button" data-filter="all">ALL COLLECTIONS</button><button class="catalogue-filter" type="button" data-filter="cocktail">COCKTAIL DRESS</button><button class="catalogue-filter" type="button" data-filter="filipiniana">FILIPINIANA</button><button class="catalogue-filter" type="button" data-filter="gowns">GOWNS</button><button class="catalogue-filter" type="button" data-filter="special">SPECIAL OCCASION</button></div>
+  <div class="dress-grid">
+    <article class="dress-card" data-category="cocktail"><div class="dress-photo"><span>Dress photo to be added</span></div><div class="dress-info"><h3>Cocktail Dress 01</h3><p class="dress-meta">Category: Cocktail Dress<br>Size: To be updated</p><p class="dress-rate">Rental rate to be added</p><span class="dress-status">DETAILS TO BE CONFIRMED</span><div class="dress-actions"><a class="secondary" href="#appointment-form" data-prefill="Dress Viewing">View Details</a><a href="#appointment-form" data-prefill="Dress Fitting">Book This Dress</a></div></div></article>
+    <article class="dress-card" data-category="filipiniana"><div class="dress-photo"><span>Dress photo to be added</span></div><div class="dress-info"><h3>Filipiniana Dress</h3><p class="dress-meta">Category: Filipiniana<br>Size: To be updated</p><p class="dress-rate">Rental rate to be added</p><span class="dress-status">DETAILS TO BE CONFIRMED</span><div class="dress-actions"><a class="secondary" href="#appointment-form" data-prefill="Dress Viewing">View Details</a><a href="#appointment-form" data-prefill="Dress Fitting">Book This Dress</a></div></div></article>
+    <article class="dress-card" data-category="cocktail"><div class="dress-photo"><span>Dress photo to be added</span></div><div class="dress-info"><h3>Cocktail Dress 02</h3><p class="dress-meta">Category: Cocktail Dress<br>Size: To be updated</p><p class="dress-rate">Rental rate to be added</p><span class="dress-status">DETAILS TO BE CONFIRMED</span><div class="dress-actions"><a class="secondary" href="#appointment-form" data-prefill="Dress Viewing">View Details</a><a href="#appointment-form" data-prefill="Dress Fitting">Book This Dress</a></div></div></article>
+    <article class="dress-card" data-category="gowns"><div class="dress-photo"><span>Dress photo to be added</span></div><div class="dress-info"><h3>Gown 01</h3><p class="dress-meta">Category: Gowns<br>Size: To be updated</p><p class="dress-rate">Rental rate to be added</p><span class="dress-status">DETAILS TO BE CONFIRMED</span><div class="dress-actions"><a class="secondary" href="#appointment-form" data-prefill="Dress Viewing">View Details</a><a href="#appointment-form" data-prefill="Dress Fitting">Book This Dress</a></div></div></article>
+  </div>
+  <h3 class="editorial-title">THE DRESS EDIT</h3>
+  <div class="editorial-gallery"><div class="editorial-item" data-category="cocktail"><div class="editorial-frame"><div class="editorial-placeholder">Cocktail Dress<br>Photo Pending</div></div><span class="editorial-label">Cocktail</span></div><div class="editorial-item" data-category="filipiniana"><div class="editorial-frame"><div class="editorial-placeholder">Filipiniana<br>Photo Pending</div></div><span class="editorial-label">Filipiniana</span></div><div class="editorial-item" data-category="gowns"><div class="editorial-frame"><div class="editorial-placeholder">Gown<br>Photo Pending</div></div><span class="editorial-label">Gowns</span></div><div class="editorial-item" data-category="special"><div class="editorial-frame"><div class="editorial-placeholder">Special Occasion<br>Photo Pending</div></div><span class="editorial-label">Special Occasion</span></div><div class="editorial-item" data-category="cocktail"><div class="editorial-frame"><div class="editorial-placeholder">Dress Photo<br>Pending</div></div><span class="editorial-label">New Arrivals</span></div></div>
+  <p class="catalogue-note">Dress photos, confirmed sizes, rental rates, and live availability will be added once the actual inventory details are provided. Book a fitting appointment to view the collection in person.</p>
+</div></section>
+<section class="types" id="appointment-types"><h2 class="section-title">Choose Your Appointment Type</h2><div class="type-grid">
+<button class="type-card" type="button" data-type="Dress Fitting"><div class="icon">♙</div><h3>Dress Fitting</h3><p>Try on dresses before renting and find your perfect fit.</p></button>
+<button class="type-card" type="button" data-type="Camera Consultation"><div class="icon">◎</div><h3>Camera Consultation</h3><p>Ask about camera units, features, and rental options.</p></button>
+<button class="type-card" type="button" data-type="Dress Viewing"><div class="icon">♧</div><h3>Dress Viewing</h3><p>Visit and browse our available dress collections.</p></button>
+</div></section>
+<section class="form-section" id="appointment-form"><div class="form-panel"><div class="form-heading"><h2>Appointment Booking Form</h2><p>Fill in the details below to request your preferred appointment.</p></div>
+<form id="appointmentForm"><div class="form-grid"><div class="form-col"><h3>♙ &nbsp; Customer Details</h3>
+<div class="field"><label for="name">Full Name *</label><input id="name" name="customer_name" required placeholder="Enter your full name"></div>
+<div class="field"><label for="mobile">Mobile Number *</label><input id="mobile" name="mobile_number" required type="tel" placeholder="09XX XXX XXXX"></div>
+<div class="field"><label for="facebook">Facebook Profile Link *</label><input id="facebook" name="facebook_profile" type="url" required placeholder="https://facebook.com/yourprofile"></div>
+<div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com"></div></div>
+<div class="form-col"><h3>▦ &nbsp; Appointment Details</h3>
+<div class="field"><label for="type">Appointment Type *</label><select id="type" name="appointment_type" required><option value="">Select appointment type</option><option>Dress Fitting</option><option>Camera Consultation</option><option>Dress Viewing</option></select></div>
+<div class="three"><div class="field"><label for="date">Preferred Date *</label><input id="date" name="appointment_date" type="date" required></div><div class="field"><label for="time">Preferred Time Slot *</label><select id="time" name="appointment_time" required><option value="">Select time</option><option>9:30 AM – 10:30 AM</option><option>10:30 AM – 11:30 AM</option><option>11:30 AM – 12:30 PM</option><option>12:30 PM – 1:30 PM</option><option>1:30 PM – 2:30 PM</option><option>2:30 PM – 3:30 PM</option><option>3:30 PM – 4:30 PM</option><option>4:30 PM – 5:30 PM</option><option>5:30 PM – 6:30 PM</option><option>6:30 PM – 7:30 PM</option><option>7:30 PM – 8:30 PM</option><option>8:30 PM – 9:30 PM</option></select></div><div class="field"><label for="people">Number of People *</label><select id="people" name="number_of_people" required><option>1 Person</option><option>2 People</option><option>3 People</option><option>4 People</option></select></div></div>
+<div class="field"><label for="notes">Notes / Special Requests (Optional)</label><textarea id="notes" name="special_requests" placeholder="e.g. Dress style, size, or camera unit you want to check"></textarea></div></div></div>
+<div class="submit-row"><button class="submit" type="submit">▦ &nbsp; SUBMIT APPOINTMENT REQUEST &nbsp; →</button></div><p class="notice" id="formMessage">Your appointment is only a request. It is not confirmed until JYPER reviews and approves your preferred schedule.</p><div class="screenshot-instruction"><strong>📸 IMPORTANT: SEND YOUR BOOKING CONFIRMATION</strong>After submitting your appointment, take a screenshot of the successful submission message, including your appointment reference number. Please send the screenshot to JYPER through either of our social media accounts.<div class="social-actions"><a href="https://www.facebook.com/JyperDigicamRentalsGensan" target="_blank" rel="noopener noreferrer" aria-label="Visit JYPER on Facebook"><span class="social-icon facebook-icon" aria-hidden="true">f</span><span>Facebook</span></a><a href="https://www.instagram.com/jyper_digicamrentalsgensan/" target="_blank" rel="noopener noreferrer" aria-label="Visit JYPER on Instagram"><svg class="social-icon instagram-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2.7"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="17.8" cy="6.5" r="1.25" fill="currentColor"/></svg><span>Instagram</span></a></div></div></form></div></section>
+
+<section class="dress-process-section" aria-labelledby="dressProcessTitle">
+  <div class="dress-process-wrap">
+    <div class="dress-process-heading">
+      <div><p class="eyebrow">YOUR JYPER DRESS RENTAL GUIDE</p><h2 id="dressProcessTitle">Dress Pick-up &amp; Return Options</h2></div>
+      <p>Choose the option that works best for you when collecting and returning your dress rental in General Santos City.</p>
+    </div>
+    <div class="dress-pickup-grid">
+      <article class="dress-pickup-card dress-shop-card"><div class="dress-shop-content"><span class="dress-pickup-icon">👗</span><div><h3>Visit Our Fitting Location</h3><p>We recommend visiting our fitting location first so you can try on the dress and make sure it fits comfortably before renting.</p></div></div><a class="dress-shop-photo-link" href="https://maps.app.goo.gl/gsBRP4RZPrkGbmfx6" target="_blank" rel="noopener noreferrer" aria-label="View JYPER dress fitting location satellite route and Google Maps directions"><img src="assets/jyper-satellite-route.png" alt="JYPER dress fitting location satellite route map" loading="lazy"></a><a class="dress-shop-map-link" href="https://maps.app.goo.gl/gsBRP4RZPrkGbmfx6" target="_blank" rel="noopener noreferrer">View Fitting Location &amp; Google Maps Directions ↗</a></article>
+      <article class="dress-pickup-card dress-shop-card"><div class="dress-shop-content"><span class="dress-pickup-icon">📦</span><div><h3>Box / Shop Pick-up &amp; Return</h3><p>You may collect and return your dress at our Box (Orange Building), in front of and beside Gaisano Mall and KCC Gensan.</p></div></div><a class="dress-shop-photo-link" href="https://maps.app.goo.gl/gpxc7RfMkJhJtbjQ6" target="_blank" rel="noopener noreferrer" aria-label="View JYPER Box shop photo and location in Google Maps"><img src="assets/jyper-camera-box-pickup.png" alt="JYPER Box shop pick-up location at the Orange Building near Gaisano Mall and KCC Gensan" loading="lazy"></a><a class="dress-shop-map-link" href="https://maps.app.goo.gl/gpxc7RfMkJhJtbjQ6" target="_blank" rel="noopener noreferrer">View Box / Shop Photo &amp; Google Maps Directions ↗</a></article>
+      <article class="dress-pickup-card"><span class="dress-pickup-icon">📍</span><div><h3>Meet-up Areas</h3><p>Meet-up arrangements are available in Tambler, Uhaw, and Calumpang. Please coordinate the schedule with us in advance.</p></div></article>
+      <article class="dress-pickup-card"><span class="dress-pickup-icon">🛵</span><div><h3>Delivery via Maxim</h3><p>Maxim delivery is available if you are already sure that the dress fits your size and you do not need to try it on first. Delivery and return fees are shouldered by the renter.</p></div></article>
+    </div>
+    <div class="dress-fit-note"><strong>Important fitting reminder:</strong> If you would like to try on the dress before renting, please visit our fitting location. Maxim delivery is only for renters who are confident that the selected dress is the correct fit and no fitting or try-on is needed. You may also choose Box / shop drop-off or arrange a meet-up in Tambler, Uhaw, or Calumpang.</div>
+    <div class="dress-schedule-panel">
+      <h3>3-Day Dress Rental Schedule</h3>
+      <p>Our standard dress rental period follows this three-day schedule:</p>
+      <table class="dress-schedule-table"><thead><tr><th>Day</th><th>Schedule</th></tr></thead><tbody>
+        <tr><td>DAY 1</td><td>Dress Pick-up</td></tr>
+        <tr><td>DAY 2</td><td>Event / Wearing Day</td></tr>
+        <tr><td>DAY 3</td><td>Dress Return</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+</section>
+
+<section class="info"><article><span>▣</span><div><b>Appointment Confirmation</b><p>Your appointment is not confirmed until approved by JYPER.</p></div></article><article><span>✉</span><div><b>Notification</b><p>We will contact you using your provided mobile number or Facebook profile.</p></div></article><article><span>⌖</span><div><b>Store Visit</b><p>Please arrive on your scheduled time for your fitting or consultation.</p></div></article></section>
+</main><footer style="border-radius:24px;background:#F9E6E6;color:#2D0202;font-weight:600;">© 2026 JYPER Digicam &amp; Dress Rental Gensan</footer></div>
+<script>
+// JYPER Google Apps Script Booking Database API
+const API_ENDPOINT = "https://script.google.com/macros/s/AKfycbx5ShPa-JvJKg13qHu8TGk0QmVI7wWzVmhdCa60h9aAwaBq0espSjUnDNs88N1dlzG8/exec";
+
+const dateInput = document.getElementById("date");
+const localToday = new Date();
+dateInput.min = new Date(localToday.getTime() - localToday.getTimezoneOffset() * 60000)
+  .toISOString().slice(0, 10);
+
+document.querySelectorAll(".catalogue-filter").forEach(button => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+    document.querySelectorAll(".catalogue-filter").forEach(b =>
+      b.classList.toggle("active", b === button)
+    );
+    document.querySelectorAll(".dress-card,.editorial-item").forEach(item => {
+      item.hidden = filter !== "all" && item.dataset.category !== filter;
+    });
+  });
+});
+
+document.querySelectorAll("[data-prefill]").forEach(link => {
+  link.addEventListener("click", () => {
+    const type = document.getElementById("type");
+    if (type) type.value = link.dataset.prefill;
+  });
+});
+
+document.querySelectorAll(".type-card").forEach(card => {
+  card.addEventListener("click", () => {
+    document.querySelectorAll(".type-card").forEach(c => c.classList.remove("active"));
+    card.classList.add("active");
+    document.getElementById("type").value = card.dataset.type;
+    document.getElementById("appointment-form").scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+document.getElementById("appointmentForm").addEventListener("submit", async event => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  const message = document.getElementById("formMessage");
+  const submitButton = form.querySelector('button[type="submit"]');
+  const values = Object.fromEntries(new FormData(form).entries());
+
+  const requestedDateTime = `${values.appointment_date} ${values.appointment_time}`;
+
+  const payload = {
+    action: "createAppointment",
+    customer_name: values.customer_name,
+    mobile: values.mobile_number,
+    appointment_type: values.appointment_type,
+    requested_datetime: requestedDateTime,
+    notes: [
+      values.email ? `Email: ${values.email}` : "",
+      values.facebook_profile ? `Facebook: ${values.facebook_profile}` : "",
+      values.number_of_people ? `Number of people: ${values.number_of_people}` : "",
+      values.special_requests ? `Special requests: ${values.special_requests}` : ""
+    ].filter(Boolean).join("\\n")
+  };
+
+  submitButton.disabled = true;
+  submitButton.textContent = "SUBMITTING…";
+  message.textContent = "Sending your appointment request…";
+
+  try {
+    const response = await fetch(API_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=UTF-8" },
+      body: JSON.stringify(payload)
+    });
+
+    const result = await response.json();
+
+    if (!result.success || !result.result || !result.result.appointment_id) {
+      throw new Error(result.message || "The appointment could not be saved.");
+    }
+
+    message.textContent =
+      `Appointment request submitted successfully! Reference: ${result.result.appointment_id}. ` +
+      "Your appointment is pending review. Please screenshot this confirmation and send it to JYPER through our Facebook page or Instagram account.";
+    message.style.color = "green";
+    form.reset();
+
+  } catch (error) {
+    message.textContent =
+      "We couldn't submit your request. Please try again or contact JYPER directly. " +
+      `(${error.message})`;
+    message.style.color = "var(--wine)";
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "▦  SUBMIT APPOINTMENT REQUEST  →";
+  }
+});
+</script>
+</body></html>

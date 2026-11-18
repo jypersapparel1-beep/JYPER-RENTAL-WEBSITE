@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JYPER Digicam Rental Gensan add-on guides and accessories.">
+  <title>JYPER Add-ons</title>
+  <link rel="icon" href="assets/JYPER%20LOGO.webp">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement-bar">✦ NOW ACCEPTING ADVANCE BOOKINGS! ✦ &nbsp; Reserve your camera ahead of your special day.</div>
+  <div class="lookbook-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html"><img src="assets/JYPER%20LOGO.webp" alt="Jyper logo"><span>JYPER <small>DIGICAM &amp; DRESS RENTAL GENSAN</small></span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#cameras">Digicams</a>
+        <a href="camera-inclusions.html">Inclusions</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="index.html#booking" class="nav-cta">Book Now</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="blush-card">
+        <p class="eyebrow">— LITTLE EXTRAS, BIGGER POSSIBILITIES —</p>
+        <h1 id="addons-title" style="font-family:var(--font-display);font-style:italic;color:var(--burgundy-dark);font-size:clamp(38px,5vw,58px);margin:0 0 10px;">Explore Our Add-ons</h1>
+        <p id="addons-intro" style="max-width:740px;margin:0 0 24px;">View the add-on photo guide first, then scroll down for prices and compatibility details.</p>
+
+        <div class="addons-poster-list" id="addons-posters"></div>
+
+        <section aria-labelledby="addon-details-heading">
+          <h2 id="addon-details-heading" style="font-size:clamp(24px,3vw,34px);margin:12px 0 8px;">Add-on Details &amp; Prices</h2>
+          <p id="addon-details-intro" style="font-size:14px;margin:0 0 22px;">Check the available options, rental prices and compatible camera units below.</p>
+          <div class="addon-details-grid" id="addon-details"></div>
+        </section>
+
+        <a class="button" href="index.html#addons">← Back to Add-ons</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand"><img src="assets/JYPER%20LOGO.webp" alt="JYPER logo"><div><strong>JYPER DIGICAM &amp; DRESS RENTAL GENSAN</strong><small>Easy to Use • Affordable • Nostalgic</small></div></div>
+      <p>General Santos City, Philippines</p>
+      <div class="footer-socials"><a href="https://www.facebook.com/JyperDigicamRentalsGensan" target="_blank" rel="noopener"><span class="social-icon">f</span> Facebook</a><a href="https://www.instagram.com/jyper_digicamrentalsgensan/" target="_blank" rel="noopener"><span class="social-icon">◎</span> Instagram</a></div>
+      <small class="footer-copyright">© 2026 JYPER Digicam &amp; Dress Rental Gensan. All rights reserved.</small>
+    </footer>
+  </div>
+
+<script>
+const addonDetails = {
+  battery: {
+    title: "Extra Battery Add-ons",
+    intro: "View the Extra Batteries poster above, then check the available battery options, prices and compatible cameras below.",
+    posters: [
+      {file:"ADD-ON - EXTRA BATTERIES.png",alt:"JYPER extra batteries add-on guide"}
+    ],
+    items: [
+      {name:"Kodak extra battery",description:"Bring a spare battery so you can keep capturing photos while you are out exploring. Compatible with Kodak Pink and Cherry.",works:"Kodak Pink / Cherry",price:"₱50"},
+      {name:"Canon M200 extra battery (1)",description:"A handy backup battery for your Canon M200—ideal for longer days and extra photo opportunities.",works:"Canon M200",price:"₱75"},
+      {name:"Canon M200 extra batteries (2)",description:"Two spare batteries to help you shoot longer with fewer charging breaks.",works:"Canon M200",price:"₱130"},
+      {name:"Canon 285 extra battery",description:"Keep your Canon IXUS 285 ready for more snapshots with an extra battery.",works:"Canon 285 Black / Brown",price:"₱75"},
+      {name:"Canon SX740 extra battery (1)",description:"An extra battery to help you keep shooting while exploring with the Canon SX740 HS.",works:"Canon SX740 HS",price:"₱75"},
+      {name:"Canon SX740 extra batteries (2)",description:"Two extra batteries for extended adventures and more time behind the lens.",works:"Canon SX740 HS",price:"₱130"}
+    ]
+  },
+  tripod: {
+    title: "Ulanzi Tripod Add-ons",
+    intro: "View both tripod photo guides above, then scroll down to compare the tripod descriptions, prices and uses.",
+    posters: [
+      {file:"ADD-ON - ULANZI MT-41 MINI TRIPOD.png",alt:"JYPER Ulanzi MT-41 mini tripod add-on guide"},
+      {file:"ADD-ON - ULANZI MT-44 TRIPOD.png",alt:"JYPER Ulanzi MT-44 tripod add-on guide"}
+    ],
+    items: [
+      {name:"Ulanzi MT-41 mini tripod",description:"A compact mini tripod that is easy to carry for tabletop shots, vlogging and steady hands-free content.",works:"All compatible cameras",price:"₱100"},
+      {name:"Ulanzi MT-44 tripod",description:"An extendable tripod for steadier photos, group shots, selfies and hands-free videos.",works:"All compatible cameras",price:"₱150"}
+    ]
+  }
+};
+
+const type = new URLSearchParams(location.search).get("type") || "battery";
+const selected = addonDetails[type] || addonDetails.battery;
+document.title = `JYPER ${selected.title}`;
+document.getElementById("addons-title").textContent = selected.title;
+document.getElementById("addons-intro").textContent = selected.intro;
+
+const posterContainer = document.getElementById("addons-posters");
+if (selected.posters.length === 1) posterContainer.classList.add("single-poster");
+posterContainer.innerHTML = selected.posters.map(item => `
+  <article class="addons-poster-card">
+    <img src="assets/${encodeURIComponent(item.file)}" alt="${item.alt}" loading="eager">
+  </article>
+`).join("");
+
+document.getElementById("addon-details-heading").textContent =
+  type === "tripod" ? "Tripod Details & Prices" : "Battery Details & Prices";
+document.getElementById("addon-details-intro").textContent =
+  type === "tripod"
+    ? "Choose the tripod that suits your shots. Both options are available as rental add-ons."
+    : "Choose the extra battery option that matches your camera unit.";
+
+document.getElementById("addon-details").innerHTML = selected.items.map(item => `
+  <article class="addon-detail-box">
+    <h3>${item.name}</h3>
+    <p>${item.description}</p>
+    <small>Works with: ${item.works}</small>
+    <strong>${item.price}</strong>
+  </article>
+`).join("");
+</script>
+</body>
+</html>
